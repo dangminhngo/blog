@@ -1,5 +1,8 @@
 import ArticleList from '@/components/ArticleList'
 import TagCarousel from '@/components/TagCarousel'
+import About from '@/components/About'
+import Follow from '@/components/Follow'
+import TagsCloud from '@/components/TagsCloud'
 
 const tags = [
   {
@@ -104,8 +107,13 @@ export default function Home() {
     <main>
       <div className="mx-auto mt-[44px] mb-16 w-320 space-y-32">
         <TagCarousel tags={tags} />
-        <div>
+        <div className="flex items-start gap-10">
           <ArticleList frontmatters={frontmatters} />
+          <aside className="min-w-[400px] space-y-[68px] pt-5">
+            <About />
+            <Follow />
+            <TagsCloud tags={tags} />
+          </aside>
         </div>
       </div>
     </main>
