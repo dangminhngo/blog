@@ -1,5 +1,5 @@
 import { Tag } from '@/types'
-import HashTag from './HashTag'
+import HashTagGrid from './HashTagGrid'
 
 export interface TagsCloudProps {
   tags: Tag[]
@@ -12,11 +12,7 @@ export default function TagsCloud({ tags }: TagsCloudProps) {
         Tags
       </h3>
       <div className="rounded-2xl border border-gray-600 px-6 pt-11 pb-6">
-        <div className="flex flex-wrap items-start gap-6">
-          {tags.map((tag) => (
-            <HashTag key={tag.id} tag={tag} />
-          ))}
-        </div>
+        <HashTagGrid tags={tags} />
       </div>
     </div>
   )

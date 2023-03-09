@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Frontmatter } from '@/types'
+import HashTagGrid from './HashTagGrid'
 import ChevronsRight from '@/assets/icons/ChevronsRight'
 import AuthorProfile from './AuthorProfile'
 
@@ -17,17 +18,18 @@ export default function ArticleCard({
         <Image src={cover} alt={title} fill={true} />
       </div>
       <div className="flex flex-col items-stretch gap-6">
-        <div className="text-sm">
+        <div className="flex items-center justify-between text-sm">
+          <HashTagGrid tags={tags} />
           <div className="flex items-center gap-2">
             <span>{date}</span>
-            <span className="block h-2 w-2 bg-red-400 rounded-full">&nbsp;</span>
+            <span className="block h-2 w-2 rounded-full bg-red-400">&nbsp;</span>
             <span>{readingTime}</span>
           </div>
         </div>
         <Link href={`/${slug}`}>
-          <h3 className="text-2xl font-bold">{title}</h3>
+          <h3 className="text-2xl font-bold leading-snug">{title}</h3>
         </Link>
-        <p className="leading-relaxed">{excerpt}</p>
+        <p className="max-h-[117px] leading-relaxed overflow-hidden text-ellipsis">{excerpt}</p>
         <div className="flex items-center justify-between">
           <Link
             href={`/${slug}`}
