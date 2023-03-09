@@ -1,5 +1,6 @@
 import { Barlow } from 'next/font/google'
 import './globals.css'
+import Header from './Header'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -16,7 +17,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${barlow.variable}`}>
-      <body>{children}</body>
+      <body className="font-sans text-lg bg-gray-900 text-gray-100">
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }

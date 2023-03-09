@@ -14,7 +14,7 @@ export default function Logo(props: SVGProps) {
         d="M1 1V18.5194H6.87302V9.06202L16.873 21.155L6.87302 33.5581V24.5659H1V41H7.98413L24.9683 21.155L7.98413 1H1Z"
         fill="currentColor"
         stroke="currentColor"
-        stroke-width="0.8"
+        strokeWidth="0.8"
       />
       <path
         d="M33.8571 1L24.8095 12.0078L28.619 16.3488L34.8095 8.5969V18.5194H41V1H33.8571Z"
