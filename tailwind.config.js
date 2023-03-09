@@ -7,6 +7,14 @@ module.exports = {
     fontFamily: {
       sans: ['var(--font-sans)', 'sans-serif'],
     },
+    fontSize: {
+      xs: ['14px', 'normal'],
+      sm: ['16px', 'normal'],
+      base: ['18px', 'normal'],
+      lg: ['20px', 'normal'],
+      xl: ['24px', 'normal'],
+      '2xl': ['32px', 'normal'],
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
