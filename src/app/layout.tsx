@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${barlow.variable}`}>
-      <body className="font-sans text-lg bg-gray-900 text-gray-100">
+      <body className="bg-gray-900 font-sans text-lg text-gray-100">
         <Header />
         {children}
       </body>

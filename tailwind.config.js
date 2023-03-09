@@ -12,6 +12,7 @@ module.exports = {
       current: 'currentColor',
       gray: colors.gray,
       accent: colors.lime,
+      red: colors.red,
     },
     extend: {
       spacing: {

@@ -12,12 +12,12 @@ import Nav from './Nav'
 export default function Header() {
   return (
     <header className="py-10">
-      <div className="mx-auto w-320 h-[4.5rem] px-12 flex items-center justify-between bg-gray-800 rounded-2xl">
+      <div className="mx-auto flex h-[4.5rem] w-320 items-center justify-between rounded-2xl bg-gray-800 px-12">
         <Link href="/" className="flex-1 justify-start">
           <Logo />
         </Link>
         <Nav />
-        <div className="flex-1 flex items-center justify-end gap-6">
+        <div className="flex flex-1 items-center justify-end gap-6">
           <a href="https://github.com" target="_blank" rel="noreferrer">
             <Github className="text-gray-300" />
           </a>
