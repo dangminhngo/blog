@@ -26,7 +26,7 @@ export default function Header() {
       <div
         className={`fixed top-0 left-0 ${
           scrollOverStaticNav ? 'translate-y-0' : '-translate-y-full'
-        } z-50 w-full bg-gray-800 shadow-xl duration-200 delay-100`}
+        } z-50 w-full bg-gray-800 shadow-xl delay-100 duration-200`}
       >
         <div className="mx-auto flex h-[4.5rem] w-320 items-center justify-between">
           <Link href="/" className="flex-1 justify-start">

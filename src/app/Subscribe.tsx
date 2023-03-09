@@ -12,7 +12,8 @@ export default function Subscribe() {
         </button>
       </form>
       <p className="w-[456px] text-center leading-relaxed">
-        Subscribe to our email newsletter to get the <strong>latest articles</strong> delivered <strong>right to your email</strong>.
+        Subscribe to our email newsletter to get the <strong>latest articles</strong> delivered{' '}
+        <strong>right to your email</strong>.
       </p>
     </div>
   )

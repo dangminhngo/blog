@@ -7,7 +7,7 @@ export interface HashTagProps {
 
 export default function HashTag({ tag }: HashTagProps) {
   return (
-    <Link href={`/tags/${tag.name}`}>
+    <Link href={`/tags/${tag.name}`} className="hover:underline">
       <span style={{ color: tag.color }}>#</span>
       <span>{tag.name}</span>
     </Link>

@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${barlow.variable}`}>
       <body className="bg-gray-900 font-sans text-base text-gray-100">
         <Header />
-        {children}
+        <main className="min-h-[calc(100vh-152px)]">{children}</main>
         <Footer />
       </body>
     </html>
