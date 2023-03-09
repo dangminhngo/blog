@@ -1,5 +1,6 @@
 import { Frontmatter } from '@/types'
 import ArticleCard from './ArticleCard'
+import Pagination from './Pagination'
 
 export interface ArticleListProps {
   frontmatters: Frontmatter[]
@@ -11,6 +12,7 @@ export default function ArticleList({ frontmatters }: ArticleListProps) {
       {frontmatters.map((frontmatter) => (
         <ArticleCard key={frontmatter.id} frontmatter={frontmatter} />
       ))}
+      <Pagination />
     </div>
   )
 }
