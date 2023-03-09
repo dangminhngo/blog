@@ -1,6 +1,7 @@
 import { Tag } from '@/types'
 import ArrowLeft from '@/assets/icons/ArrowLeft'
 import ArrowRight from '@/assets/icons/ArrowRight'
+import TagCard from './TagCard'
 
 export interface TagCarouselProps {
   tags: Tag[]
@@ -16,24 +17,7 @@ export default function TagCarousel({ tags }: TagCarouselProps) {
         <ArrowRight />
       </button>
       {tags.map((t) => (
-        <div key={t.id} className="">
-          <div
-            className="relative flex flex-col items-center gap-6 rounded-lg border-[1px] bg-gray-800 px-6 pt-11 pb-6"
-            style={{ borderColor: t.color }}
-          >
-            <h6
-              style={{ backgroundColor: t.color }}
-              className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg rounded-lg py-2 px-10 text-gray-900"
-            >
-              # {t.name}
-            </h6>
-            <p className="text-center leading-relaxed">{t.description}</p>
-            <p className="flex items-center gap-2">
-              {t.numOfArticles}
-              <span className="inline-block h-2 w-2 rounded-full bg-red-400">&nbsp;</span>articles
-            </p>
-          </div>
-        </div>
+        <TagCard key={t.id} {...t} />
       ))}
     </div>
   )
