@@ -23,11 +23,11 @@ export default function TagCarousel({ tags }: TagCarouselProps) {
           >
             <h6
               style={{ backgroundColor: t.color }}
-              className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg py-2 px-10 text-gray-900"
+              className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg rounded-lg py-2 px-10 text-gray-900"
             >
               # {t.name}
             </h6>
-            <p className="text-center">{t.description}</p>
+            <p className="text-center leading-relaxed">{t.description}</p>
             <p className="flex items-center gap-2">
               {t.numOfArticles}
               <span className="inline-block h-2 w-2 rounded-full bg-red-400">&nbsp;</span>articles
