@@ -10,7 +10,7 @@ export default function Cloud({ title, rightSide = false, children }: CloudProps
       <h3
         className={`absolute top-0 ${
           rightSide ? 'right-6' : 'left-6'
-        } -translate-y-1/2 rounded-lg border border-gray-600 bg-gray-900 px-6 py-2 text-lg font-semibold`}
+        } -translate-y-1/2 rounded-lg border border-gray-600 bg-gray-900 px-6 py-2 font-semibold`}
       >
         {title}
       </h3>
