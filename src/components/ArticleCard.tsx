@@ -36,7 +36,7 @@ export default function ArticleCard({
         <div className="flex items-center justify-between">
           <Link
             href={`/${slug}`}
-            className="flex items-center gap-2 rounded-lg bg-gray-900 py-2 px-6 font-medium"
+            className="flex items-center gap-2 rounded-lg border border-gray-700 bg-gray-900 py-2 px-6 font-medium"
           >
             <span>Continue Reading</span> <ChevronsRight className="h-4 w-4" />
           </Link>
