@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="min-h-[calc(100vh-152px)]">{children}</main>
         <Footer />
+        <div id="search"></div>
       </body>
     </html>
   )
