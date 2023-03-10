@@ -18,7 +18,10 @@ export default function TagCard({ id, color, name, description, numOfArticles }:
         <p className="text-center leading-relaxed">{description}</p>
         <p className="flex items-center gap-2">
           {numOfArticles}
-          <span className="inline-block h-2 w-2 rounded-full bg-red-400">&nbsp;</span>articles
+          <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: color }}>
+            &nbsp;
+          </span>
+          articles
         </p>
       </div>
     </div>
