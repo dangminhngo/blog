@@ -34,7 +34,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <p className="text-sm leading-relaxed">
+        <p className="leading-relaxed">
           Hi, my name is Dang Minh Ngo. I am a Front-end Developer who is living and working Ho Chi
           Minh, Vietnam. Welcome to my personal blog where I share everything I know.
         </p>

@@ -1,8 +1,6 @@
 import TagBoard from '@/components/TagBoard'
 import ArticleList from '@/components/ArticleList'
-import About from '@/components/About'
-import Follow from '@/components/Follow'
-import TagsCloud from '@/components/TagsCloud'
+import Sidebar from '@/components/Sidebar'
 
 import { tags, frontmatters } from '@/lib/mock'
 
@@ -18,11 +16,7 @@ export default function ArticlesByTag() {
       />
       <div className="flex items-start gap-10">
         <ArticleList frontmatters={frontmatters} />
-        <aside className="min-w-[400px] space-y-[68px] pt-5">
-          <About />
-          <Follow />
-          <TagsCloud tags={tags} />
-        </aside>
+        <Sidebar tags={tags} />
       </div>
     </div>
   )

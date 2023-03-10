@@ -1,8 +1,7 @@
 import ArticleList from '@/components/ArticleList'
 import TagCarousel from '@/components/TagCarousel'
-import About from '@/components/About'
-import Follow from '@/components/Follow'
-import TagsCloud from '@/components/TagsCloud'
+import Sidebar from '@/components/Sidebar'
+
 import { tags, frontmatters } from '@/lib/mock'
 
 export default function Home() {
@@ -11,11 +10,7 @@ export default function Home() {
       <TagCarousel tags={tags} />
       <div className="flex items-start gap-10">
         <ArticleList frontmatters={frontmatters} />
-        <aside className="w-1/3 space-y-[68px] pt-5">
-          <About />
-          <Follow />
-          <TagsCloud tags={tags} />
-        </aside>
+        <Sidebar tags={tags} />
       </div>
     </div>
   )
