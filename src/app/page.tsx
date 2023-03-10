@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="mx-auto mt-[44px] mb-16 w-320 space-y-32">
       <TagCarousel tags={tags} />
-      <div className="flex items-start gap-10">
+      <div className="flex gap-10">
         <ArticleList frontmatters={frontmatters} />
         <Sidebar tags={tags} />
       </div>
