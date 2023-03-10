@@ -9,7 +9,7 @@ export interface SidebarProps {
 
 export default function Sidebar({ tags }: SidebarProps) {
   return (
-    <aside className="w-1/3 space-y-[68px] pt-5">
+    <aside className="w-1/3 space-y-[68px]">
       <About />
       <Follow />
       <TagsCloud tags={tags} />
