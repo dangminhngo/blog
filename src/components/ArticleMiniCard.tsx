@@ -16,7 +16,7 @@ export default function ArticleMiniCard({
       </div>
       <div className="space-y-3 text-sm text-gray-300">
         <HashTagGrid tags={tags} />
-        <h3 className="text-lg font-bold text-gray-200 leading-snug">{title}</h3>
+        <h3 className="text-lg font-bold leading-snug text-gray-200">{title}</h3>
         <div className="flex items-center gap-2">
           <span>{date}</span>
           <span className="block h-2 w-2 rounded-full bg-red-400">&nbsp;</span>
