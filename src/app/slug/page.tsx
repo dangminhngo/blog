@@ -1,6 +1,6 @@
+import MainLayout from '../MainLayout'
 import Front from './Front'
-import Sidebar from '@/components/Sidebar'
-import { tags as allTags, frontmatters } from '@/lib/mock'
+import { frontmatters } from '@/lib/mock'
 import { Article } from '@/types'
 import Excerpt from './Excerpt'
 import Body from './Body'
@@ -19,7 +19,7 @@ export default function ArticlePost() {
   } as Article
 
   return (
-    <div className="mx-auto flex w-320 items-start gap-10 py-16">
+    <MainLayout>
       <div className="space-y-12">
         <Front frontmatter={frontmatter} />
         <Excerpt excerpt={frontmatter.excerpt} />
@@ -28,7 +28,6 @@ export default function ArticlePost() {
         <Related frontmatters={frontmatters} />
         <ArticleNav prev={frontmatters[0]} next={frontmatters[1]} />
       </div>
-      <Sidebar tags={allTags} />
-    </div>
+    </MainLayout>
   )
 }
