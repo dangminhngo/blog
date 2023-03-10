@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Tag } from '@/types'
 
 export interface TagCardProps {
@@ -8,7 +9,7 @@ export default function TagCard({
   tag: { id, color, name, description, numOfArticles },
 }: TagCardProps) {
   return (
-    <div data-id={id}>
+    <Link href={`/tags/${name}`} data-id={id}>
       <div
         className="relative flex flex-col items-center gap-6 rounded-lg border-[1px] bg-gray-800 px-6 pt-11 pb-6"
         style={{ borderColor: color }}
@@ -28,6 +29,6 @@ export default function TagCard({
           articles
         </p>
       </div>
-    </div>
+    </Link>
   )
 }
