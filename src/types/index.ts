@@ -25,6 +25,7 @@ export interface Frontmatter {
   cover: string
 }
 
-export interface Article extends Frontmatter {
+export interface Article {
+  frontmatter: Frontmatter
   body: string
 }

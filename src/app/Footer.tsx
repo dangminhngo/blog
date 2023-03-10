@@ -1,5 +1,5 @@
+import SocialIcons from '@/components/SocialIcons'
 import Subscribe from './Subscribe'
-import SocialIcons from './SocialIcons'
 
 export default function Footer() {
   return (

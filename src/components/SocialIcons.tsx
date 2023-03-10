@@ -4,9 +4,13 @@ import Twitter from '@/assets/icons/Twitter'
 import LinkedIn from '@/assets/icons/LinkedIn'
 import RSSFeed from '@/assets/icons/RSSFeed'
 
-export default function SocialIcons() {
+export default function SocialIcons({ col }: { col?: boolean }) {
   return (
-    <div className="flex flex-1 items-center justify-end gap-6">
+    <div
+      className={`flex ${col ? 'flex-col' : 'flex-row'} flex-1 items-center justify-end ${
+        col ? 'gap-4' : 'gap-6'
+      }`}
+    >
       <a href="https://github.com" target="_blank" rel="noreferrer">
         <Github className="text-gray-300" />
       </a>

@@ -2,8 +2,8 @@
 import { useRef } from 'react'
 import Link from 'next/link'
 
+import SocialIcons from '@/components/SocialIcons'
 import Logo from '@/assets/images/Logo'
-import SocialIcons from './SocialIcons'
 import Nav from './Nav'
 import { useScrollOver } from '@/hooks'
 

@@ -17,7 +17,7 @@ export default function TagCarousel({ tags }: TagCarouselProps) {
         <ArrowRight />
       </button>
       {tags.map((t) => (
-        <TagCard key={t.id} {...t} />
+        <TagCard key={t.id} tag={t} />
       ))}
     </div>
   )

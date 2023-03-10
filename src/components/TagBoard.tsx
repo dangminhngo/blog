@@ -1,12 +1,17 @@
 import { Tag } from '@/types'
 
-export type TagBoardProps = Tag
+export interface TagBoardProps {
+  tag: Tag
+}
 
-export default function TagBoard({ id, color, name, description, numOfArticles }: TagBoardProps) {
+export default function TagBoard({
+  tag: { id, color, name, description, numOfArticles },
+}: TagBoardProps) {
   return (
     <div
       className="mx-auto flex w-[960px] items-center gap-16 rounded-2xl border p-8"
       style={{ borderColor: color }}
+      data-id={id}
     >
       <div className="flex min-w-[320px] flex-col items-center gap-2">
         <h3 className="text-lg font-semibold">

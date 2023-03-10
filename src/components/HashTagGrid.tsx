@@ -7,7 +7,7 @@ export interface HashTagGridProps {
 
 export default function HashTagGrid({ tags }: HashTagGridProps) {
   return (
-    <div className="flex flex-wrap items-start gap-[0.5em]">
+    <div className="flex flex-wrap items-start gap-[0.75em]">
       {tags.map((tag) => (
         <HashTag key={tag.id} tag={tag} />
       ))}

@@ -1,8 +1,12 @@
 import { Tag } from '@/types'
 
-export type TagCardProps = Tag
+export interface TagCardProps {
+  tag: Tag
+}
 
-export default function TagCard({ id, color, name, description, numOfArticles }: TagCardProps) {
+export default function TagCard({
+  tag: { id, color, name, description, numOfArticles },
+}: TagCardProps) {
   return (
     <div data-id={id}>
       <div

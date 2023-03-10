@@ -40,7 +40,7 @@ export default function ArticleCard({
           >
             <span>Continue Reading</span> <ChevronsRight className="h-4 w-4" />
           </Link>
-          <AuthorProfile {...author} />
+          <AuthorProfile author={author} />
         </div>
       </div>
     </div>
