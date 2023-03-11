@@ -17,8 +17,10 @@ export default function ArticleMiniCard({
       </div>
       <div className="flex flex-col items-stretch gap-2 text-sm text-gray-300">
         <HashTagGrid tags={tags} />
-        <Link href={`/${slug}`} className="text-base font-bold leading-snug text-gray-200">
-          {title}
+        <Link href={`/${slug}`} className="group text-base font-bold text-gray-200">
+          <p className="inline bg-gradient-to-r from-accent-300 to-accent-500 bg-[length:0_1px] bg-[0_100%] bg-no-repeat leading-snug duration-500 group-hover:bg-[length:100%_1px]">
+            {title}
+          </p>
         </Link>
         <div className="flex items-center gap-2">
           <span>{date}</span>

@@ -24,7 +24,7 @@ export default function Follow() {
           href="https://github.com"
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-4"
+          className="group flex items-center gap-4"
         >
           <div className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-700 bg-gray-800">
             <Facebook className="text-[#1877f2]" />

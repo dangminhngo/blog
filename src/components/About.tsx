@@ -10,7 +10,7 @@ export default function About() {
   return (
     <Cloud title="About Me">
       <div className="flex items-center gap-6">
-        <div className="relative h-20 w-20 overflow-hidden rounded-full border border-gray-600">
+        <div className="relative aspect-[1/1] h-20 w-20 overflow-hidden rounded-full border border-gray-600">
           <Image src="/avatars/dangminhngo.png" alt="Dang Minh Ngo" fill={true} />
         </div>
         <div className="space-y-4">

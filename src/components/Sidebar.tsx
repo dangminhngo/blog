@@ -9,7 +9,7 @@ export interface SidebarProps {
 
 export default function Sidebar({ tags }: SidebarProps) {
   return (
-    <aside className="min-w-[400px] max-w-[400px] space-y-12">
+    <aside className="hidden min-w-[320px] max-w-[320px] space-y-12 lg:block xl:min-w-[400px] xl:max-w-[400px]">
       <About />
       <Follow />
       <TagsCloud tags={tags} />

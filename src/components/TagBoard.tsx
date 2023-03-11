@@ -9,11 +9,11 @@ export default function TagBoard({
 }: TagBoardProps) {
   return (
     <div
-      className="mx-auto flex w-[960px] items-center gap-16 rounded-2xl border p-8"
+      className="mx-auto flex w-full flex-col items-center gap-8 rounded-2xl border p-8 sm:flex-row sm:gap-12 lg:w-[960px] lg:gap-16"
       style={{ borderColor: color }}
       data-id={id}
     >
-      <div className="flex min-w-[320px] flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-2 lg:min-w-[320px]">
         <h3 className="text-lg font-semibold">
           <span style={{ color }}>#</span> {name}
         </h3>

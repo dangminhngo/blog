@@ -17,23 +17,25 @@ export default function Header() {
   return (
     <AppContext.Provider value={state}>
       <AppDispatchContext.Provider value={dispatch}>
-        <header className="relative py-10">
+        <header className="relative px-4 py-10 xl:px-0">
           <div
             ref={ref}
-            className="mx-auto flex h-[4.5rem] w-320 items-center justify-between rounded-2xl bg-gray-800 px-12"
+            className="mx-auto flex h-[4.5rem] w-full items-center justify-between rounded-2xl bg-gray-800 px-12 xl:w-320"
           >
             <Link href="/" className="flex-1 justify-start">
               <Logo />
             </Link>
             <Nav />
-            <SocialIcons />
+            <div className="hidden flex-1 lg:block">
+              <SocialIcons />
+            </div>
           </div>
           <div
             className={`fixed top-0 left-0 ${
               scrollOverStaticNav ? 'translate-y-0' : '-translate-y-full'
-            } z-50 w-full bg-gray-800 shadow-xl delay-100 duration-200`}
+            } z-50 hidden w-full border-b border-gray-700 bg-gray-800 px-4 shadow-xl delay-100 duration-200 md:block xl:px-0`}
           >
-            <div className="mx-auto flex h-[4.5rem] w-320 items-center justify-between">
+            <div className="mx-auto flex h-[4.5rem] w-full items-center justify-between xl:w-320">
               <Link href="/" className="flex-1 justify-start">
                 <Logo />
               </Link>

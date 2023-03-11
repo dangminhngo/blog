@@ -7,7 +7,7 @@ import RSSFeed from '@/assets/icons/RSSFeed'
 export default function SocialIcons({ col }: { col?: boolean }) {
   return (
     <div
-      className={`flex ${col ? 'flex-col' : 'flex-row'} flex-1 items-center justify-end ${
+      className={`flex ${col ? 'flex-col' : 'flex-row'} items-center justify-end ${
         col ? 'gap-4' : 'gap-6'
       }`}
     >

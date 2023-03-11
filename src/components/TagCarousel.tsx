@@ -9,16 +9,18 @@ export interface TagCarouselProps {
 
 export default function TagCarousel({ tags }: TagCarouselProps) {
   return (
-    <div className="relative flex items-center justify-between gap-10">
-      <button className="absolute top-1/2 left-0 z-10 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[1px] border-gray-600 bg-gray-900 outline-none">
-        <ArrowLeft />
-      </button>
-      <button className="absolute top-1/2 right-0 z-10 flex h-10 w-10 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[1px] border-gray-600 bg-gray-900 outline-none">
-        <ArrowRight />
-      </button>
-      {tags.map((t) => (
-        <TagCard key={t.id} tag={t} />
-      ))}
+    <div className="px-4 xl:px-0">
+      <div className="relative flex items-center justify-between gap-6 xl:gap-10">
+        <button className="absolute top-1/2 left-0 z-10 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[1px] border-gray-600 bg-gray-900 outline-none">
+          <ArrowLeft />
+        </button>
+        <button className="absolute top-1/2 right-0 z-10 flex h-10 w-10 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[1px] border-gray-600 bg-gray-900 outline-none">
+          <ArrowRight />
+        </button>
+        {tags.map((t) => (
+          <TagCard key={t.id} tag={t} />
+        ))}
+      </div>
     </div>
   )
 }

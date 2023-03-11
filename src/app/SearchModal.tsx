@@ -35,8 +35,8 @@ export default function SearchModal({ tags }: SearchModalProps) {
               <Close className="h-10 w-10" />
             </button>
           </div>
-          <div className="flex flex-1 flex-col items-center justify-center gap-32">
-            <form className="flex w-1/3 items-center rounded-lg border border-gray-500 bg-gray-600 p-3">
+          <div className="flex flex-1 flex-col items-center justify-center gap-32 px-4 xl:px-0">
+            <form className="flex w-full items-center rounded-lg border border-gray-500 bg-gray-600 p-3 md:w-1/2 xl:w-1/3">
               <input
                 className="flex-1 bg-transparent pl-3 outline-none"
                 placeholder="Type to start your search"

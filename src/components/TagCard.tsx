@@ -18,7 +18,7 @@ export default function TagCard({
           style={{ backgroundColor: color }}
           className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg py-2 px-10 text-lg text-gray-900"
         >
-          # {name}
+          {name}
         </h6>
         <p className="text-center leading-relaxed">{description}</p>
         <p className="flex items-center gap-2">

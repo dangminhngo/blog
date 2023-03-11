@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import MagnifyingGlass from '@/assets/icons/MagnifyingGlass'
 import NavLink from './NavLink'
 import SearchModal from './SearchModal'
@@ -9,6 +10,15 @@ export default function Nav() {
   const searchModalShow = useAppSelect((state) => state?.searchModalShow)
   const dispatch = useAppDispatch()
   const _toggleSearchModal = () => dispatch(toggleSearchModal())
+
+  useEffect(() => {
+    if (searchModalShow) {
+      document.body.style.overflow = 'hidden'
+      return
+    }
+
+    document.body.style.overflow = 'auto'
+  }, [searchModalShow])
 
   return (
     <>

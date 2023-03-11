@@ -8,7 +8,7 @@ export interface MainLayoutProps {
 
 export default function MainLayout({ feature, children }: MainLayoutProps) {
   return (
-    <div className="mx-auto mt-[44px] mb-16 w-320 space-y-32">
+    <div className="mx-auto mt-[44px] mb-16 w-full space-y-32 px-4 xl:w-320 xl:px-0">
       {feature && <div>{feature}</div>}
       <div className="flex gap-10">
         {children}
