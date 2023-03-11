@@ -9,8 +9,6 @@ import { useAppSelect, useAppDispatch } from '@/hooks'
 
 export interface SearchModalProps {
   tags: Tag[]
-  show?: boolean
-  close: () => void
 }
 
 export default function SearchModal({ tags }: SearchModalProps) {

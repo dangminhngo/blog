@@ -41,7 +41,7 @@ export default function Nav() {
           <MagnifyingGlass />
         </button>
       </nav>
-      <SearchModal tags={tags} show={searchModalShow} close={_toggleSearchModal} />
+      <SearchModal tags={tags} />
     </>
   )
 }

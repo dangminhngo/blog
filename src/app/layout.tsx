@@ -1,7 +1,6 @@
 import { Barlow } from 'next/font/google'
 import './globals.css'
-import Header from './Header'
-import Footer from './Footer'
+import Context from './Context'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -11,17 +10,16 @@ const barlow = Barlow({
 })
 
 export const metadata = {
-  title: 'Next App Router Template',
-  description: 'The next template for your Next app',
+  title: 'Dang Minh Ngo | Front-end Developer',
+  description: 'Welcome to my blog',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${barlow.variable}`}>
       <body className="bg-gray-900 font-sans text-base text-gray-100">
-        <Header />
-        <main className="min-h-[calc(100vh-152px)]">{children}</main>
-        <Footer />
+        <Context>{children}</Context>
+        <div id="mobile-nav"></div>
         <div id="search"></div>
       </body>
     </html>
