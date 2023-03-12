@@ -18,7 +18,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${barlow.variable}`}>
       <body className="bg-gray-900 font-sans text-base text-gray-100">
-        <Context>{children}</Context>
+        <div id="app" className="in-expo delay-100 duration-300">
+          <Context>{children}</Context>
+        </div>
         <div id="mobile-nav"></div>
         <div id="search"></div>
       </body>
